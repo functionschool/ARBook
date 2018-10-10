@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0FF0C9216E3EC800F126BB /* HoverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FF0C8216E3EC800F126BB /* HoverScene.swift */; };
+		BE0FF0CB216E408400F126BB /* HoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FF0CA216E408400F126BB /* HoverViewController.swift */; };
+		BE0FF0CD216E44B600F126BB /* momkey.dae in Resources */ = {isa = PBXBuildFile; fileRef = BE0FF0CC216E44B600F126BB /* momkey.dae */; };
+		BE667635216D24E20067F63D /* BookDescriptionScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BE667634216D24E20067F63D /* BookDescriptionScene.sks */; };
 		BEE57E23216CF786005C9672 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE57E22216CF786005C9672 /* AppDelegate.swift */; };
 		BEE57E25216CF786005C9672 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE57E24216CF786005C9672 /* art.scnassets */; };
 		BEE57E27216CF786005C9672 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE57E26216CF786005C9672 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE0FF0C8216E3EC800F126BB /* HoverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverScene.swift; sourceTree = "<group>"; };
+		BE0FF0CA216E408400F126BB /* HoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverViewController.swift; sourceTree = "<group>"; };
+		BE0FF0CC216E44B600F126BB /* momkey.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = momkey.dae; sourceTree = "<group>"; };
+		BE667634216D24E20067F63D /* BookDescriptionScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BookDescriptionScene.sks; sourceTree = "<group>"; };
 		BEE57E1F216CF786005C9672 /* ARBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE57E22216CF786005C9672 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEE57E24216CF786005C9672 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -37,6 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE5E9E77216E3CE600BFAEDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE0FF0CC216E44B600F126BB /* momkey.dae */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE667632216D24A70067F63D /* Interface Builders */ = {
+			isa = PBXGroup;
+			children = (
+				BEE57E28216CF786005C9672 /* Main.storyboard */,
+				BEE57E2D216CF788005C9672 /* LaunchScreen.storyboard */,
+			);
+			path = "Interface Builders";
+			sourceTree = "<group>";
+		};
+		BE667633216D24B50067F63D /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				BEE57E22216CF786005C9672 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
 		BEE57E16216CF786005C9672 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +89,16 @@
 		BEE57E21216CF786005C9672 /* ARBook */ = {
 			isa = PBXGroup;
 			children = (
-				BEE57E22216CF786005C9672 /* AppDelegate.swift */,
-				BEE57E24216CF786005C9672 /* art.scnassets */,
+				BE667633216D24B50067F63D /* Application Delegate */,
 				BEE57E26216CF786005C9672 /* ViewController.swift */,
-				BEE57E28216CF786005C9672 /* Main.storyboard */,
+				BE0FF0C8216E3EC800F126BB /* HoverScene.swift */,
+				BE0FF0CA216E408400F126BB /* HoverViewController.swift */,
+				BE667634216D24E20067F63D /* BookDescriptionScene.sks */,
+				BEE57E24216CF786005C9672 /* art.scnassets */,
 				BEE57E2B216CF788005C9672 /* Assets.xcassets */,
-				BEE57E2D216CF788005C9672 /* LaunchScreen.storyboard */,
+				BE667632216D24A70067F63D /* Interface Builders */,
 				BEE57E30216CF788005C9672 /* Info.plist */,
+				BE5E9E77216E3CE600BFAEDF /* Models */,
 			);
 			path = ARBook;
 			sourceTree = "<group>";
@@ -129,6 +165,8 @@
 				BEE57E2F216CF788005C9672 /* LaunchScreen.storyboard in Resources */,
 				BEE57E2C216CF788005C9672 /* Assets.xcassets in Resources */,
 				BEE57E2A216CF786005C9672 /* Main.storyboard in Resources */,
+				BE0FF0CD216E44B600F126BB /* momkey.dae in Resources */,
+				BE667635216D24E20067F63D /* BookDescriptionScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0FF0C9216E3EC800F126BB /* HoverScene.swift in Sources */,
 				BEE57E27216CF786005C9672 /* ViewController.swift in Sources */,
 				BEE57E23216CF786005C9672 /* AppDelegate.swift in Sources */,
+				BE0FF0CB216E408400F126BB /* HoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
