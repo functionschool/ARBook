@@ -26,6 +26,21 @@ class HoverViewController: UIViewController, ARSCNViewDelegate {
       sceneView.scene = scene
     }
     
+    let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapScreen))
+    view.addGestureRecognizer(tapRecognizer)
+  }
+  
+  @objc
+  func didTapScreen(recognizer: UITapGestureRecognizer) {
+    if didInitializeScene {
+      if let camera = sceneView.session.currentFrame?.camera {
+        var translation = matrix_identity_float4x4
+        translation.columns.3.z = -1.0
+        let transform = camera.transform * translation
+        let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
+        sceneController.addMonkey(position: position)
+      }
+    }
   }
   
   override func viewWillAppear(_ animated: Bool) {
